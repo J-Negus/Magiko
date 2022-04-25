@@ -155,7 +155,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -690,6 +690,14 @@ PrefabInstance:
     - target: {fileID: 7882366747619518554, guid: 46215564b4d2e5649ad2bc8cca07064b, type: 3}
       propertyPath: gravedad
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7882366747619518554, guid: 46215564b4d2e5649ad2bc8cca07064b, type: 3}
+      propertyPath: velocidad
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7882366747619518554, guid: 46215564b4d2e5649ad2bc8cca07064b, type: 3}
+      propertyPath: alturaSalto
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46215564b4d2e5649ad2bc8cca07064b, type: 3}
