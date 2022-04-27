@@ -1562,12 +1562,12 @@ GameObject:
   - component: {fileID: 7341104112712258156}
   - component: {fileID: 7341104112712258159}
   - component: {fileID: 7341104112712258158}
+  - component: {fileID: 7341104112712258164}
   - component: {fileID: 7341104112712258157}
   - component: {fileID: 7341104112712258153}
-  - component: {fileID: 7341104112712258164}
   m_Layer: 0
   m_Name: Cambio C
-  m_TagString: Enemy_Color
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1581,15 +1581,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7341104112712258163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd357a11be50888428e1ff008019a9ed, type: 3}
+  m_Script: {fileID: 11500000, guid: d7d98840d5198f040a0e172873177886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cambioRojo:
-    r: 1
-    g: 0
-    b: 0
-    a: 1
-  _renderer: {fileID: 7341104112712258158}
+  cuboRojo: {fileID: 7341104112712258163}
 --- !u!1 &7341104112765752578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,18 +2116,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7341104113250189205}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &7341104113250189202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7341104113250189205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a39ed91498df0d48ab24ce6c1510379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &7341104113250189203
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2161,10 +2144,10 @@ GameObject:
   - component: {fileID: 7341104113250189201}
   - component: {fileID: 7341104113250189200}
   - component: {fileID: 7341104113250189207}
-  - component: {fileID: 7341104113250189202}
   - component: {fileID: 7341104113250189203}
+  - component: {fileID: 7341104113250189208}
   m_Layer: 0
-  m_Name: Cube (6)
+  m_Name: Destroy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2197,6 +2180,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0014343, z: 1}
   m_Center: {x: 0, y: 0.0007170439, z: 0}
+--- !u!114 &7341104113250189208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7341104113250189205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 070d21aec18d1ad48875d0bb025710cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuboDestroy: {fileID: 7341104113250189205}
 --- !u!23 &7341104113261480440
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3053,11 +3049,12 @@ GameObject:
   - component: {fileID: 7341104113804422110}
   - component: {fileID: 7341104113804422105}
   - component: {fileID: 7341104113804422104}
+  - component: {fileID: 7341104113804422113}
   - component: {fileID: 7341104113804422111}
   - component: {fileID: 7341104113804422112}
   m_Layer: 0
   m_Name: Amarillo
-  m_TagString: Enemy_ColorTime
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3105,6 +3102,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7341104113804422113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7341104113804422109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344feb32d9299b4ead6c6f14e130494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cuboAmarillo: {fileID: 7341104113804422109}
 --- !u!33 &7341104113807733932
 MeshFilter:
   m_ObjectHideFlags: 0
