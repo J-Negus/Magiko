@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemyBox : MonoBehaviour
 {
+    public virtual void PlayerInteractua()
+    {
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {

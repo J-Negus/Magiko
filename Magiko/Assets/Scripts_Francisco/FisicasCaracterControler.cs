@@ -15,14 +15,14 @@ public class FisicasCaracterControler : MonoBehaviour
     private CharacterController _characterControler;
 
     //Cambio de color de caja
-    Color cambioRojo = Color.red;
-    Color cambioAmarillo = Color.yellow;
+    
+   
 
 
-    public Renderer _renderer;
+    //public Renderer _renderer;
 
-    public GameObject cuboRojo;
-    public GameObject cuboAmarillo;
+    
+    
 
 
    
@@ -35,7 +35,7 @@ public class FisicasCaracterControler : MonoBehaviour
             Debug.Log("Character controler es Nulo");
         }
 
-        _renderer = GetComponent<Renderer>();
+       // _renderer = GetComponent<Renderer>();
     }
 
     void Update()
@@ -64,26 +64,24 @@ public class FisicasCaracterControler : MonoBehaviour
     {
         if (hit.collider.tag.Equals("Enemy"))
         {
-        Destroy(hit.collider.gameObject);
+            hit.collider.GetComponent<EnemyBox>().PlayerInteractua();
+            //
         }
 
 
-        if (hit.collider.tag.Equals("Enemy_Color"))
-        {
-            cuboRojo.GetComponent<Renderer>().material.color = cambioRojo;
-        }
+        //if (hit.collider.tag.Equals("Enemy_Color"))
+        //{
+        //    
+        //}
 
 
-        if (hit.collider.tag.Equals("Enemy_ColorTime"))
-        {          
-            Invoke("CambioAmarillo",2f);           
-        }
+        //if (hit.collider.tag.Equals("Enemy_ColorTime"))
+        //{          
+        //              
+        //}
 
     }
 
-     void CambioAmarillo()
-     {
-        cuboAmarillo.GetComponent<Renderer>().material.color = cambioAmarillo;  
-     }
+     
 
 }
