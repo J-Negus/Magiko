@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class EnemyBoxColor : EnemyBox
 {
-    Color cambioRojo = Color.red;
+    Color cambioVerde = Color.green;
 
     public GameObject cuboRojo;
 
     public override void PlayerInteractua()
     {
-        Debug.Log("Cambio color");
-        cuboRojo.GetComponent<Renderer>().material.color = cambioRojo;
+        Debug.Log("Cambio color verde Cubo  BUENO");
+        cuboRojo.GetComponent<Renderer>().material.color = cambioVerde;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

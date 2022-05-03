@@ -7,16 +7,15 @@ public class EnemyBoxDestroy : EnemyBox
     public GameObject cuboDestroy;
     public override void PlayerInteractua()
     {
-        Debug.Log("Adios paco");
-        Destroy(cuboDestroy);
+        Debug.Log("Adios paco, cubo destruye al pisarlo");
+        Destroy(gameObject);
+        //Destroy(cuboDestroy);
     }
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

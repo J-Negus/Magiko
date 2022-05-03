@@ -9,22 +9,26 @@ public class EnemyBoxTemp : EnemyBox
     public GameObject cuboAmarillo;
     public override void PlayerInteractua()
     {
-        Debug.Log("Cambio tiempo");
-        Invoke("CambioAmarillo", 4f);
+        Debug.Log("Cambia Color amarillo 2 seg y destruye a 4 seg");
+        Invoke("CambioAmarillo", 2f);
+        Invoke("DestruyeCubo", 4f);
+
     }
 
     void CambioAmarillo()
      {
        cuboAmarillo.GetComponent<Renderer>().material.color = cambioAmarillo;  
      }
+    void DestruyeCubo() 
+    {
+        Destroy(gameObject);
+    }
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
