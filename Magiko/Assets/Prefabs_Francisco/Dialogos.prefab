@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e815acb81caf6c4083d6ea7b0bc09bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animacioFade: {fileID: 0}
   dialogo_2: {fileID: 4847121089100242022}
 --- !u!1 &4847121089100242022
 GameObject:
@@ -623,6 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e815acb81caf6c4083d6ea7b0bc09bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animacioFade: {fileID: 0}
   dialogo_2: {fileID: 4847121090048571941}
 --- !u!1 &4847121089364838236
 GameObject:
@@ -770,6 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e815acb81caf6c4083d6ea7b0bc09bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animacioFade: {fileID: 0}
   dialogo_2: {fileID: 4847121089765812923}
 --- !u!1 &4847121089405326004
 GameObject:
@@ -1191,6 +1194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e815acb81caf6c4083d6ea7b0bc09bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animacioFade: {fileID: 0}
   dialogo_2: {fileID: 4847121090344345345}
 --- !u!1 &4847121089655416707
 GameObject:
@@ -1530,6 +1534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e815acb81caf6c4083d6ea7b0bc09bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animacioFade: {fileID: 0}
   dialogo_2: {fileID: 4847121090338935470}
 --- !u!1 &4847121089727374519
 GameObject:
@@ -2296,7 +2301,6 @@ GameObject:
   - component: {fileID: 4847121090493471570}
   - component: {fileID: 4847121090493471571}
   - component: {fileID: 4847121090493471568}
-  - component: {fileID: 4847121090493471569}
   m_Layer: 5
   m_Name: ContinuarBoton 2
   m_TagString: Untagged
@@ -2406,7 +2410,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4847121090493471569}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TextoHistoriaIntro_2, Assembly-CSharp
         m_MethodName: TextosIntro
         m_Mode: 1
@@ -2418,19 +2422,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4847121090493471569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4847121090493471575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e815acb81caf6c4083d6ea7b0bc09bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogo_2: {fileID: 4847121089757337306}
 --- !u!1 &4847121090697462099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +2568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e815acb81caf6c4083d6ea7b0bc09bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animacioFade: {fileID: 0}
   dialogo_2: {fileID: 4847121090344345345}
 --- !u!1 &4847121090778205694
 GameObject:
