@@ -38,11 +38,6 @@ public class FisicasCaracterControler : MonoBehaviour
 
     void Update()
     {
-
-        if (true)
-        {
-
-        }
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 direccion = new Vector3(-verticalInput, 0, horizontalInput);
