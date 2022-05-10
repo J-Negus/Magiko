@@ -13,7 +13,7 @@ public class FisicasCaracterControler : MonoBehaviour
     private float impulsoGravedad;
 
     private CharacterController _characterControler;
-
+    Animator animatorPlayer;
     
 
     //Cambio de color de caja
@@ -21,9 +21,8 @@ public class FisicasCaracterControler : MonoBehaviour
 
     void Start()
     {
+        animatorPlayer = GetComponent<Animator>();
         _characterControler = GetComponent<CharacterController>();
-
-
         if (_characterControler is null)
         {
             Debug.Log("Character controler es Nulo");
@@ -44,6 +43,7 @@ public class FisicasCaracterControler : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Space))//y pulsamos Espacio
                 {
+                animatorPlayer.GetBool("Salta");
                     impulsoGravedad = alturaSalto;
                 }
             }
