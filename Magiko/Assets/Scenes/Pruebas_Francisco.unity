@@ -796,7 +796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1347806230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2681,6 +2681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7d98840d5198f040a0e172873177886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  renderMaterial: {fileID: 2100000, guid: 88a858a40a70b6c448e9075d5c4f5731, type: 2}
   cuboRojo: {fileID: 7341104112712258163}
 --- !u!1 &7341104112765752578
 GameObject:

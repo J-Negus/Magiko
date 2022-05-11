@@ -38,12 +38,20 @@ public class FisicasCaracterControler : MonoBehaviour
         Vector3 direccion = new Vector3(verticalInput, 0, -horizontalInput);
         Vector3 velocity = direccion * velocidad;
 
-        
-            if (_characterControler.isGrounded) //si el charqacter controler esta tocando suelo
+        if (Input.GetKey("d") & (_characterControler.isGrounded))
+        {
+
+            animatorPlayer.SetBool("Camina", true);
+
+        }
+        if (_characterControler.isGrounded) //si el charqacter controler esta tocando suelo
             {
                 if (Input.GetKeyDown(KeyCode.Space))//y pulsamos Espacio
                 {
-                animatorPlayer.GetBool("Salta");
+                    animatorPlayer.SetBool("Salta", true);
+                    //animatorPlayer.SetBool("Camina", false);
+                    //animatorPlayer.SetBool("Muere1", false);
+                    //animatorPlayer.SetBool("Idle", false);
                     impulsoGravedad = alturaSalto;
                 }
             }
