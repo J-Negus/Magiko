@@ -15,7 +15,7 @@ public class EnemyBoxPista : EnemyBox
         if (flecha != null)
         {
             flecha.SetActive(true);
-            Debug.Log("Flecha destino activa muestra camino");
+          //  Debug.Log("Flecha destino activa muestra camino");
             flecha.GetComponent<Renderer>().material.color = cambioVerde;
 
             Destroy(flecha, 7);

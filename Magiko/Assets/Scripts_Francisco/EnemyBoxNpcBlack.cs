@@ -21,46 +21,29 @@ public class EnemyBoxNpcBlack : EnemyBox
         {
             Invoke("CambioRojo", 2);
             Invoke("ActivoEnemy", 5);
-            Debug.Log("Test enemigo aparece ok");
+            //Debug.Log("Test enemigo aparece ok");
 
             
                 //  Destroy(enemigoBlackNpc, 7);
             }
         }
 
-        //void Start()
-        //{
-        //    Cubo5 = GetComponent<GameObject>();
-        //    enemigoBlackNpc = GetComponent<GameObject>();
-        //    enemigoBlackNpc.SetActive(false);
-        //}
+    
 
-        void ActivoEnemy()
-        {
-            enemigoBlackNpc.SetActive(true);
-        }
-        void CambioRojo()
-        {
-            Cubo5.GetComponent<Renderer>().material = renderMaterial;
-        }
-
-    //void OnControllerColliderHit(ControllerColliderHit hit)
-    //{
-    //    if (hit.collider.tag.Equals("Player"))
-    //    {
-    //        //hit.collider.GetComponent<EnemyBox>().PlayerInteractua();
-    //        Debug.Log("COLISIONADO PLAYER MUERE");
-    //    }
-    //}
-
-    private void OnCollisionEnter(Collision collision)
+    void ActivoEnemy()
     {
-        if (CompareTag("Player"))
-        {
-            //hit.collider.GetComponent<EnemyBox>().PlayerInteractua();
-            Debug.Log("COLISIONADO PLAYER MUERE");
-        }
+        enemigoBlackNpc.SetActive(true);
+
     }
+    void CambioRojo()
+    {
+        Cubo5.GetComponent<Renderer>().material = renderMaterial;
+    }
+        
+
+    
+
+
 }
     
 

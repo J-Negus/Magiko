@@ -16,7 +16,7 @@ public class EnemyBoxTemp : EnemyBox
     public override void PlayerInteractua()
     {
        // cuboAmarillo.GetComponent<Renderer>().material = renderMaterial;
-        Debug.Log("Cambia Color amarillo 2 seg y destruye a 4 seg");
+      //  Debug.Log("Cambia Color amarillo 2 seg y destruye a 4 seg");
         Invoke("CambioAmarillo", 2f);
         Invoke("Caer", 4f);
         Invoke("DestruyeCubo", 7f);

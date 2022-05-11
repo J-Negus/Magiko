@@ -7,7 +7,7 @@ public class EnemyBoxDestroy : EnemyBox
     public GameObject cuboDestroy;
     public override void PlayerInteractua()
     {
-        Debug.Log("Adios paco, cubo destruye al pisarlo");
+       // Debug.Log("Adios paco, cubo destruye al pisarlo");
         Destroy(gameObject);
         //Destroy(cuboDestroy);
     }

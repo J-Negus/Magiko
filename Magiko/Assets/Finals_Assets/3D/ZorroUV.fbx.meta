@@ -1,11 +1,14 @@
 fileFormatVersion: 2
-guid: 2e4e266563b9a1d4a8fa8d0f5d3b0752
+guid: 01f24b6ba2870284c96afb82d52ed729
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: 4781951162920444690
-    second: Armature|ArmatureAction
+      74: 6065333994261340666
+    second: ZorroCamina
+  - first:
+      74: 6065333994261340666
+    second: Armature|Armature|Armature|ArmatureAction
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,8 +38,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|ArmatureAction
-      takeName: Armature|ArmatureAction
+      name: Armature|Armature|Armature|ArmatureAction
+      takeName: Armature|Armature|Armature|ArmatureAction
       internalID: 0
       firstFrame: 0
       lastFrame: 25
