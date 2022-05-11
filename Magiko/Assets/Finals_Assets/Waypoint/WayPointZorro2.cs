@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WayPointZorro2 : MonoBehaviour
 {
-    float speed = 6f;
+    public float speed = 0.5f;
     public Transform target; // crea obejeto con targer donde tiene que ir
     void Start()
     {

@@ -796,7 +796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1347806230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4212,6 +4212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1344feb32d9299b4ead6c6f14e130494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  renderMaterial: {fileID: 0}
+  rigidCaida: {fileID: 0}
   cuboAmarillo: {fileID: 7341104113804422109}
 --- !u!33 &7341104113807733932
 MeshFilter:
