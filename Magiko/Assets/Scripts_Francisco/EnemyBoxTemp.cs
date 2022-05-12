@@ -8,6 +8,7 @@ public class EnemyBoxTemp : EnemyBox
     public Material renderMaterial;
     public Rigidbody rigidCaida;
     public GameObject cuboAmarillo;
+    float tiempoCaida;
 
     private void Start()
     {
@@ -17,12 +18,15 @@ public class EnemyBoxTemp : EnemyBox
     {
        // cuboAmarillo.GetComponent<Renderer>().material = renderMaterial;
       //  Debug.Log("Cambia Color amarillo 2 seg y destruye a 4 seg");
-        Invoke("CambioAmarillo", 2f);
-        Invoke("Caer", 4f);
+        Invoke("CambioAmarillo", 0.2f);
+        Invoke("Caer", RandomTiempoCaida());
         Invoke("DestruyeCubo", 7f);
 
     }
-
+    float RandomTiempoCaida() {
+        tiempoCaida = Random.Range(0.5f, 1.5f);
+        return tiempoCaida;
+    }
     void CambioAmarillo()
      {
         cuboAmarillo.GetComponent<Renderer>().material = renderMaterial;
