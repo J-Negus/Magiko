@@ -12,7 +12,7 @@ public class FlechaRota : MonoBehaviour
         
         
         transform.Rotate(new Vector3(5f, 0, 0));
-        Debug.Log("Flecha destino activa muestra camino");
+     //   Debug.Log("Flecha destino activa muestra camino");
         GetComponent<Renderer>().material.color = cambioVerde;
     }
     private void Update()

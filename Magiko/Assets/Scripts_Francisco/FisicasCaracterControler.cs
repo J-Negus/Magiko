@@ -43,6 +43,9 @@ public class FisicasCaracterControler : MonoBehaviour
        
         if (_characterControler.isGrounded) //si el charqacter controler esta tocando suelo
         {
+            Quaternion rotacionInput = Quaternion.LookRotation(new Vector3(-horizontalInput, 0, -verticalInput).normalized, Vector3.up);
+            gameObject.transform.rotation = Quaternion.Slerp(gameObject.transform.rotation, rotacionInput, Time.deltaTime  * 10); 
+
             if (Input.GetKeyDown(KeyCode.Space))//y pulsamos Espacio
             {
                 Debug.Log("Debo de Saltar ");
@@ -50,7 +53,7 @@ public class FisicasCaracterControler : MonoBehaviour
                 //animatorPlayer.SetBool("Caminar", false);
                 //animatorPlayer.SetBool("Morir", false);
                 //animatorPlayer.SetBool("Idle", false);
-                impulsoGravedad = alturaSalto;
+                Invoke("ImpulsoSalto", .5f);
             }
 
             if (direccion != Vector3.zero) 
@@ -70,6 +73,11 @@ public class FisicasCaracterControler : MonoBehaviour
         velocity.y = impulsoGravedad;
             _characterControler.Move(velocity * Time.deltaTime);
         //    _characterControler.Move(velocity * Time.deltaTime);
+    }
+
+    private void ImpulsoSalto()
+    {
+        impulsoGravedad = alturaSalto;
     }
 
     bool vivo = true;

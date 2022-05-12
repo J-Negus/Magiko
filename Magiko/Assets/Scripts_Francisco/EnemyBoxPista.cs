@@ -6,16 +6,15 @@ public class EnemyBoxPista : EnemyBox
 {
     Color cambioVerde = Color.green;
 
-    //public GameObject cuboPista;
     public GameObject flecha;
-
+    public Material renderMaterial;
+    public GameObject cuboGira;
     public override void PlayerInteractua()
     {
-        
         if (flecha != null)
         {
             flecha.SetActive(true);
-          //  Debug.Log("Flecha destino activa muestra camino");
+            cuboGira.GetComponent<Renderer>().material = renderMaterial;
             flecha.GetComponent<Renderer>().material.color = cambioVerde;
 
             Destroy(flecha, 7);
@@ -25,10 +24,5 @@ public class EnemyBoxPista : EnemyBox
     void Start()
     {
         flecha.SetActive(false);
-    }
-
-    void Update()
-    {
-
     }
 }

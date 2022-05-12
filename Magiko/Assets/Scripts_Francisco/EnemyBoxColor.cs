@@ -10,7 +10,7 @@ public class EnemyBoxColor : EnemyBox
 
     public override void PlayerInteractua()
     {
-        Debug.Log("Cambio color verde Cubo  BUENO");
+      //  Debug.Log("Cambio color verde Cubo  BUENO");
         cuboRojo.GetComponent<Renderer>().material = renderMaterial;
         //cuboRojo.GetComponent<Renderer>().material.color = cambioVerde;
     }
