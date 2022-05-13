@@ -33,11 +33,11 @@ public class JuegoPausa : MonoBehaviour
         Application.Quit();
         Debug.Log("Juego Cerrado");
     }
-
-    public void PausarJuego()
-    { //METODO PAUSAR EL JUEGO //
-        Time.timeScale = 1;
+    public void PausarJuego()//METODO PAUSAR EL JUEGO //
+    {
+        Time.timeScale = 0;
     }
+
 
     public void PlayJuego()
     { //METODO PAUSAR EL JUEGO //

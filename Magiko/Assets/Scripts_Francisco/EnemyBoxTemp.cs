@@ -24,7 +24,7 @@ public class EnemyBoxTemp : EnemyBox
 
     }
     float RandomTiempoCaida() {
-        tiempoCaida = Random.Range(0.5f, 1.5f);
+        tiempoCaida = Random.Range(0.1f, 5.5f);
         return tiempoCaida;
     }
     void CambioAmarillo()
