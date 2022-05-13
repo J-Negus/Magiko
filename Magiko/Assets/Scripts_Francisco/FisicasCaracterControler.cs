@@ -16,10 +16,11 @@ public class FisicasCaracterControler : MonoBehaviour
 
     private CharacterController _characterControler;
     Animator animatorPlayer;
-    
+
 
     //Cambio de color de caja
     //public Renderer _renderer;
+    Quaternion rotacionParado;
 
     void Start()
     {
@@ -29,11 +30,11 @@ public class FisicasCaracterControler : MonoBehaviour
         {
             Debug.Log("Character controler es Nulo");
         }
-
+        rotacionParado = gameObject.transform.rotation;
        // _renderer = GetComponent<Renderer>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
@@ -43,7 +44,13 @@ public class FisicasCaracterControler : MonoBehaviour
        
         if (_characterControler.isGrounded) //si el charqacter controler esta tocando suelo
         {
-            Quaternion rotacionInput = Quaternion.LookRotation(new Vector3(-horizontalInput, 0, -verticalInput).normalized, Vector3.up);
+            Quaternion rotacionInput;
+            Vector3 dir = new Vector3(-horizontalInput, 0, -verticalInput).normalized ;
+            if (dir != Vector3.zero) {
+                rotacionInput = Quaternion.LookRotation(dir, Vector3.up);
+            } else { 
+                rotacionInput = rotacionParado;
+            }
             gameObject.transform.rotation = Quaternion.Slerp(gameObject.transform.rotation, rotacionInput, Time.deltaTime  * 10); 
 
             if (Input.GetKeyDown(KeyCode.Space))//y pulsamos Espacio
