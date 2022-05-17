@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//usa boleadana para testeo
 public class RotacionMovimientoAnimacion : MonoBehaviour
 {
     private enum Axis {X,Y,Z};
@@ -25,6 +25,7 @@ public class RotacionMovimientoAnimacion : MonoBehaviour
     float radio = 0;
     private float inicioX, inicioY, inicioZ;
 
+   
     void Start()
     {
         incrementoRadio = 2 * Mathf.PI * frecuenciaMovimiento;
@@ -36,8 +37,10 @@ public class RotacionMovimientoAnimacion : MonoBehaviour
     void FixedUpdate()
     {
         Movimiento();
-        Rotacion();       
-         
+        Rotacion();
+
+        
+
     }
 
     private void Rotacion()
